@@ -1,5 +1,6 @@
 mod day01;
 mod day02;
+mod day03;
 
 use std::fs::File;
 use std::io::{self, BufRead, BufReader};
@@ -26,6 +27,16 @@ fn main() {
     println!(
         "Number of safe reports after dampening: {}",
         day02::problem2::run(load_input_file("src/day02/input.txt").expect(&file_load_error))
+    );
+
+    println!("=== Day 03 ===");
+    println!(
+        "Result of all multiplications: {}",
+        day03::problem1::run(load_input_file("src/day03/input.txt").expect(&file_load_error))
+    );
+    println!(
+        "Result of all multiplications after adding 'logic': {}",
+        day03::problem2::run(load_input_file("src/day03/input.txt").expect(&file_load_error))
     );
 }
 
