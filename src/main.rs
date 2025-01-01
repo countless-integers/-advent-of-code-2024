@@ -1,6 +1,7 @@
 mod day01;
 mod day02;
 mod day03;
+mod day04;
 
 use std::fs::File;
 use std::io::{self, BufRead, BufReader};
@@ -37,6 +38,12 @@ fn main() {
     println!(
         "Result of all multiplications after adding 'logic': {}",
         day03::problem2::run(load_input_file("src/day03/input.txt").expect(&file_load_error))
+    );
+
+    println!("=== Day 04 ===");
+    println!(
+        "XMAS count: {}",
+        day04::problem1::run(load_input_file("src/day04/input.txt").expect(&file_load_error))
     );
 }
 
