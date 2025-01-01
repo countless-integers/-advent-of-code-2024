@@ -45,6 +45,10 @@ fn main() {
         "XMAS count: {}",
         day04::problem1::run(load_input_file("src/day04/input.txt").expect(&file_load_error))
     );
+    println!(
+        "MAS X count: {}",
+        day04::problem2::run(load_input_file("src/day04/input.txt").expect(&file_load_error))
+    );
 }
 
 fn load_input_file(file_path: &str) -> Result<impl Iterator<Item = String>, io::Error> {
