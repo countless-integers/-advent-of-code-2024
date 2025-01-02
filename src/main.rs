@@ -2,6 +2,7 @@ mod day01;
 mod day02;
 mod day03;
 mod day04;
+mod day05;
 
 use std::fs::File;
 use std::io::{self, BufRead, BufReader};
@@ -48,6 +49,16 @@ fn main() {
     println!(
         "MAS X count: {}",
         day04::problem2::run(load_input_file("src/day04/input.txt").expect(&file_load_error))
+    );
+
+    println!("=== Day 05 ===");
+    println!(
+        "Middle page energy: {}",
+        day05::problem1::run(load_input_file("src/day05/input.txt").expect(&file_load_error))
+    );
+    println!(
+        "Middle sorted page energy: {}",
+        day05::problem2::run(load_input_file("src/day05/input.txt").expect(&file_load_error))
     );
 }
 
