@@ -4,6 +4,7 @@ mod day03;
 mod day04;
 mod day05;
 mod day06;
+mod day07;
 
 use std::fs::File;
 use std::io::{self, BufRead, BufReader};
@@ -70,6 +71,16 @@ fn main() {
     println!(
         "Potential patrol route loops after introducing a cheeky obstacle: {}",
         day06::problem2::run(load_input_file("src/day06/input.txt").expect(file_load_error))
+    );
+
+    println!("=== Day 07 ===");
+    println!(
+        "Total calibration result: {}",
+        day07::problem1::run(load_input_file("src/day07/input.txt").expect(file_load_error))
+    );
+    println!(
+        "Total calibration result: {}",
+        day07::problem2::run(load_input_file("src/day07/input.txt").expect(file_load_error))
     );
 }
 
