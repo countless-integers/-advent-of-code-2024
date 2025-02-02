@@ -5,6 +5,7 @@ mod day04;
 mod day05;
 mod day06;
 mod day07;
+mod day08;
 
 use std::fs::File;
 use std::io::{self, BufRead, BufReader};
@@ -81,6 +82,16 @@ fn main() {
     println!(
         "Total calibration result: {}",
         day07::problem2::run(load_input_file("src/day07/input.txt").expect(file_load_error))
+    );
+
+    println!("=== Day 08 ===");
+    println!(
+        "Total anitnodes: {}",
+        day08::problem1::run(load_input_file("src/day08/input.txt").expect(file_load_error))
+    );
+    println!(
+        "Total anitnodes: {}",
+        day08::problem2::run(load_input_file("src/day08/input.txt").expect(file_load_error))
     );
 }
 
